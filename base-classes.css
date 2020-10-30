@@ -1,0 +1,14 @@
+.ul-links {
+  margin: 0;
+  padding: 0;
+  list-style: none; 
+  text-decoration: none;
+}
+.ul-links > li > a {
+  display: block;
+  text-decoration: none;
+}
+
+.link {
+  text-decoration: none;
+}

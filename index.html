@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>HealthyFood</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="base-classes.css" />
+  <link rel="stylesheet" href="grid.css" />
+  <link rel="stylesheet" href="nav.css" />
+  <link rel="stylesheet" href="menu.css" />
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/png" />   
+</head>
+
+<body><div class="container">
+
+  <nav class="container__nav nav">
+    <a class="nav__title link" href="index.html">
+      <span class="color-change">Healthy</span>Food.
+    </a>
+
+    <ul class="nav__ul-links ul-links">
+        <li><a href="./about">About us</a></li>
+        <li><a href="./blog">Blog</a></li>
+        <li><a href="./contact">Contact us</a></li>
+    </ul>
+
+    <div class="nav__dropdown dropdown">
+      <button class="dropdown__toggle">MENU</button>
+      <div class="dropdown__drawer">
+        <ul class="menu">
+          <li><a href="./">Главная</a></li>
+          <li><a href="./mymenu">Моё меню</a></li>
+          <li><a href="./recipes">Все рецепты</a></li>
+          <li><a href="./specials">Акции!</a></li>
+          <li><a href="./about">О нас</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container__slogan slogan">
+    <div class="slogan__part1"><span class="text-selection">eat</span> healthy</div>
+    <div class="slogan__part2"><span class="text-selection">stay</span> healthy</div>
+  </div>
+
+  <img class="container__img-food img-food" src="./images/circle.png" alt="photo"/>
+
+  <div class="container__recipe recipe">
+    <div class="recipe__description">
+      Fish and vegetables are most 
+      dietary and healthy foods! Catfish 
+      is good for the abusence of small 
+      bones, and not only in the "tail" - 
+      there are none between the muscles.
+    </div>
+    
+    <a href="./recipe" class="recipe__details">Recipe</a>
+    
+  </div>
+
+  <div class="container__socials socials socials_right">
+    <ul class="socials__ul-links ul-links">
+      <li><a href="https://instagram.com/healthyfood">Instagram</a></li>
+      <li><a href="https://vk.com/healthyfood">VK</a></li>
+      <li><a href="https://t.me/healthyfood">Telegram</a></li>
+    </ul>
+  </div>
+</div></body>
+
+<script type="text/javascript">
+  (function () {
+    var toggle = document.querySelector(".dropdown__toggle");
+    toggle.addEventListener("click", function (event) {
+      event.preventDefault();
+      var dropdown = event.target.parentNode;
+      dropdown.classList.toggle("is-open");
+    });
+  })();
+</script>

@@ -1,0 +1,90 @@
+:root {
+  box-sizing: border-box;
+  font-size: calc(0.5em + 1vw);
+}
+
+@media (min-width: 50em) {
+  :root {
+    font-size: 1.125em;
+  }
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: url(images/background-image.jpg);
+  background-size: 100vw;
+  background-position:  100% 50%;
+}
+
+.container {
+  min-height: 100vh;
+  background: linear-gradient(to right, rgba(38, 38, 38, 0.9) 0%, rgba(37, 37, 37, 0.9) calc(100% / 3), rgba(58, 58, 58, 0.9) calc(100% / 3),  rgba(58, 58, 58, 0.9) calc(100% / 3 * 2),rgba(248, 217, 114, 0.9) calc(100% / 3 * 2), rgba(248, 217, 114, 0.9) 100%);
+}
+
+.container__nav {
+  margin: 2em;
+}
+
+.container__slogan {
+  margin-left: 1em;
+}
+.slogan {
+  font-size: 4rem;
+  color: #fff;
+}
+
+.slogan__part2 {
+  padding-left: 0.5em;
+}
+
+img.img-food {
+  width: 40vw;
+}
+
+.recipe {
+  position: relative;
+  padding: 3em 2em 4em;
+  background-color: #fff;
+}
+
+.recipe__details {
+  position: absolute;
+  bottom: -5.1vh;
+  left: calc(50% - 10vw);
+  width: 20vw; 
+	padding: 1.5em 1em;
+	color: #252525;
+	background-color:#F8D972;	
+	text-decoration: none;
+}
+
+.socials__ul-links {
+  display: flex;
+  margin: 0;
+  padding-left: 0; 
+  background-color: #fff;
+}
+.socials__ul-links  > li > a {
+  padding: 0.8em 1em;
+  color: #3A3A3A;
+}
+
+.socials_right {
+  margin-left: auto;
+}
+
+/*вспомогательные классы*/
+.text-selection {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.color-change {
+  color:#F8D972;
+}

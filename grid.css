@@ -1,0 +1,36 @@
+body {
+  max-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+    grid-template: 
+    " nav    nav     nav    nav      nav      nav   "
+    "slogan slogan slogan img-food img-food img-food"
+    "recipe recipe    .   img-food img-food img-food"
+    "  .      .       .       .     socials  socials"
+  ;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+}
+
+.container__nav {
+  grid-area: nav;
+}
+
+.container__slogan {
+  grid-area: slogan;
+}
+
+.container__img-food {
+  grid-area: img-food;
+}
+
+.container__recipe {
+  grid-area: recipe;
+}
+
+.container__socials {
+  grid-area: socials;
+}
