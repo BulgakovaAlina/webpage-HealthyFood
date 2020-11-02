@@ -65,13 +65,14 @@ img.img-food {
 }
 
 .socials__ul-links {
+  font-size: 0;
   display: flex;
   margin: 0;
   padding-left: 0; 
   background-color: #fff;
 }
 .socials__ul-links  > li > a {
-  padding: 0.8em 1em;
+  padding: 0.7rem 1rem;
   color: #3A3A3A;
 }
 
