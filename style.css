@@ -54,6 +54,8 @@ img.img-food {
 }
 
 .recipe__details {
+  display: flex;
+  justify-content: space-between;
   position: absolute;
   bottom: -1.9em;
   left: calc(50% - 10vw);
