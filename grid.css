@@ -5,11 +5,12 @@ body {
 
 .container {
   display: grid;
+  align-content: space-between;
     grid-template: 
     " nav    nav     nav    nav      nav      nav   "
     "slogan slogan slogan img-food img-food img-food"
     "recipe recipe    .   img-food img-food img-food"
-    "  .      .       .       .     socials  socials"
+    "  .      .    socials socials  socials  socials"
   ;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto;

@@ -1,12 +1,6 @@
 :root {
   box-sizing: border-box;
-  font-size: calc(0.5em + 1vw);
-}
-
-@media (min-width: 50em) {
-  :root {
-    font-size: 1.125em;
-  }
+  font-size: calc(0.9em + 0.1vw);
 }
 
 *,
@@ -18,8 +12,7 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-image: url(images/background-image.jpg);
-  background-size: 100vw;
-  background-position:  100% 50%;
+  background-size: cover;
 }
 
 .container {
@@ -45,25 +38,6 @@ body {
 
 img.img-food {
   width: 40vw;
-}
-
-.recipe {
-  position: relative;
-  padding: 3em 2em 4em;
-  background-color: #fff;
-}
-
-.recipe__details {
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  bottom: -1.9em;
-  left: calc(50% - 10vw);
-  width: 20vw; 
-	padding: 1.5em 1em;
-	color: #252525;
-	background-color:#F8D972;	
-	text-decoration: none;
 }
 
 .socials__ul-links {

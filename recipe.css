@@ -1,0 +1,18 @@
+.recipe {
+  position: relative;
+  padding: 3em 2em 4em;
+  background-color: #fff;
+}
+
+.recipe__details {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: -1.9em;
+  left: calc(50% - 10vw);
+  width: 20vw; 
+	padding: 1.5em 1em;
+	color: #252525;
+	background-color:#F8D972;	
+	text-decoration: none;
+}
