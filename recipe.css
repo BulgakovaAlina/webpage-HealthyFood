@@ -16,3 +16,32 @@
 	background-color:#F8D972;	
 	text-decoration: none;
 }
+
+.recipe__scroll {
+  display: flex;
+  position: absolute;
+  right: -8rem;
+  width: 8rem; 
+  top: 0;
+	color: #252525;
+	background-color:#F8D972;	
+}
+
+.recipe__scroll > * {
+  font-size: 0;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+}
+
+.recipe__scroll > *:hover {
+  background-color: #fff;
+}
+
+.scroll__previous {
+  background-color: #F8D972;
+}
+
+.scroll__next {
+  background-color:#797979;
+}
