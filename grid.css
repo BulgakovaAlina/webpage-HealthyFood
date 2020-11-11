@@ -6,7 +6,7 @@ body {
 .container {
   display: grid;
   align-content: space-between;
-    grid-template: 
+  grid-template: 
     " nav    nav     nav    nav      nav      nav   "
     "slogan slogan slogan img-food img-food img-food"
     "recipe recipe    .   img-food img-food img-food"
@@ -15,6 +15,29 @@ body {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto;
 }
+@media (orientation: portrait) {
+  .container {
+    grid-template: 
+    " nav    nav     nav    nav      nav      nav   "
+    "slogan slogan slogan img-food img-food img-food"
+    "recipe recipe recipe  recipe     .        .    "
+    "  .      .    socials  socials  socials socials"
+  ;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+@media (max-width:575px) {
+  .container {
+    grid-template: 
+    " nav     "
+    "slogan   "
+    "img-food "
+    "recipe   "
+    "socials  "
+    ; 
+  }
+}
+
 
 .container__nav {
   grid-area: nav;

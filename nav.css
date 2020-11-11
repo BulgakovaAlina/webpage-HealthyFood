@@ -3,11 +3,13 @@
   justify-content: space-between;
 }
 
+
 .nav__title {
   flex: 1;
   font-size: 1.1em;
   color: #fff;
 }
+
 
 .nav__ul-links {
   flex: 1;
@@ -15,13 +17,26 @@
   display: flex;
   
 }
+@media (max-width:575px) {
+  .nav__ul-links {
+    flex-direction: column;
+  }
+}
+
 .nav__ul-links > * {
   flex: 1;
 }
+@media (max-width:575px) {
+  .nav__ul-links > * + * {
+    padding-top: 1em;
+  }
+}
+
 .nav__ul-links  > li > a {
   text-align: center;
   color: #fff;
 }
+
 
 .nav__dropdown {
   flex: 1;

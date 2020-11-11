@@ -25,7 +25,7 @@ body {
 }
 
 .container__slogan {
-  margin-left: 1em;
+  margin: 0.5em;
 }
 .slogan {
   font-size: 4rem;
@@ -36,8 +36,26 @@ body {
   padding-left: 0.5em;
 }
 
+.container__img-food {
+  margin: 2em;
+}
+
 img.img-food {
-  width: 40vw;
+  width: 35vw;
+}
+@media (max-width:575px) {
+  img.img-food {
+    width: 70vw;
+    margin: 2em auto;
+  }
+}
+
+.container__recipe {
+  margin: 2em 0;
+}
+
+.container__socials{
+  margin-top: 2em;
 }
 
 .socials__ul-links {
