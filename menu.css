@@ -6,7 +6,6 @@
 .dropdown__toggle {
   font-size: 1rem;
   background-color: transparent;
-  cursor: pointer;
 }
 
 .dropdown__drawer {
