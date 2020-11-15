@@ -15,7 +15,7 @@ body {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto;
 }
-@media (orientation: portrait) {
+@media (orientation: portrait), (max-width:837px) {
   .container {
     grid-template: 
     " nav    nav     nav    nav      nav      nav   "
