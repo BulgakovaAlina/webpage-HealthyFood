@@ -7,9 +7,11 @@
 .nav__title {
   flex: 1;
   font-size: 1.1em;
-  color: #fff;
 }
 
+.nav__title  > a {
+  color: #fff;
+}
 
 .nav__ul-links {
   flex: 1;
